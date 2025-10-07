@@ -91,6 +91,40 @@
       rel="stylesheet"
       href="https://unpkg.com/lenis@1.3.4/dist/lenis.css"
     />
+    <style>
+      /* METABRIQ override: reduce hero title size for better balance */
+      .hero-title {
+        font-size: 48px !important;
+        line-height: 1.05 !important;
+        letter-spacing: -0.5px !important;
+      }
+
+      /* Tablet */
+      @media (max-width: 991px) {
+        .hero-title { font-size: 40px !important; }
+      }
+
+      /* Mobile */
+      @media (max-width: 479px) {
+        .hero-title { font-size: 32px !important; }
+      }
+      /* Nav text logo styling (Nasalization / fallback) */
+      .nav-brand-text {
+        display: inline-block;
+        font-family: 'Nasalization', 'Arial Rounded MT Bold', 'Segoe UI', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #07122B;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1;
+      }
+      .nav-brand-text .reg { font-size: 12px; vertical-align: super; margin-left: 4px; }
+
+      @media (max-width: 767px) {
+        .nav-brand-text { font-size: 18px; }
+      }
+    </style>
   </head>
   <body class="body">
     <div class="page-wrapper">
@@ -118,7 +152,7 @@
             data-w-id="0d6ebb54-0e67-fa54-4799-f066bf79edf7"
             class="page-loder-descption"
           >
-            Creative Design Agency
+          Content Marketing Agency
           </div>
         </div>
       </div>
@@ -183,13 +217,7 @@
                     href="/"
                     aria-current="page"
                     class="nav-brand-logo-link w-nav-brand w--current"
-                    ><img
-                      src="https://chatgpt.com/s/m_68dd7b51f0708191a84e2104583b0c10"
-                      loading="lazy"
-                      alt="METABRIQ logo"
-                      class="nav-brand-logo"
-                      width="140"
-                  /></a>
+                    ><span class="nav-brand-text" aria-label="METABRIQ">METABRIQ<span class="reg">®</span></span></a>
                 </div>
                 <nav
                   role="navigation"
@@ -321,11 +349,10 @@
               <div class="hero-top-content">
                 <div class="hero-sub-title-wrap">
                   <div class="hero-sub-title">
-                    A Content First 
                   </div>
                 </div>
                 <div class="hero-title-wrap">
-                  <h2 class="hero-title"> growth Marketing Agency</h2>
+                  <h2 class="hero-title"> A Content First Growth marketing Agency</h2>
                 </div>
               </div>
               <div class="hero-bottom-content">
@@ -360,7 +387,7 @@
                   <div class="sub-title">About</div>
                 </div>
                 <div class="main-title-wrap">
-                  <h4 class="main-title">Studio</h4>
+                  <h4 class="main-title">About Us</h4>
                 </div>
               </div>
               <div class="about-section-cntent">
@@ -422,12 +449,12 @@
                     <div class="about-number-title">Content Pieces Delivered</div>
                   </div>
                   <div class="about-number-block">
-                    <h6 class="about-number">7M+</h6>
-                    <div class="about-number-title">Engagements Generated</div>
+                    <h6 class="about-number"></h6>
+                    <div class="about-number-title"></div>
                   </div>
                   <div class="about-number-block">
-                    <h6 class="about-number">86%</h6>
-                    <div class="about-number-title">Client Retention Rate</div>
+                    <h6 class="about-number"></h6>
+                    <div class="about-number-title"></div>
                   </div>
                 </div>
               </div>
@@ -634,6 +661,208 @@
               </div>
               <div class="brands-content-blur l"></div>
               <div class="brands-content-blur r"></div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="service-section">
+          <div class="padding">
+            <div class="w-layout-blockcontainer container-medium w-container">
+              <div class="service-section-content-wrapper">
+                <div class="section-title">
+                  <div data-wf--title--variant="title-whte" class="title">
+                    <div class="sub-title-wrap">
+                      <div class="sub-title-dot"></div>
+                      <div
+                        class="sub-title w-variant-bd176cc2-59da-d6d4-29a0-534dd69b6c65"
+                      >
+                        What we do
+                      </div>
+                    </div>
+                    <div class="main-title-wrap">
+                      <h4
+                        class="main-title w-variant-bd176cc2-59da-d6d4-29a0-534dd69b6c65"
+                      >
+                        OUR SERVICES
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="section-title-right">
+                    <h4 class="main-title white">(04)</h4>
+                  </div>
+                </div>
+                <div class="service-section-content">
+                  <div class="service-item">
+                    <div class="service-item-left">
+                      <div class="service-title-wrapper">
+                        <div class="service-number-block">
+                          <div class="service-number">01</div>
+                        </div>
+                        <div class="service-title-block">
+                          <div class="service-title">CONTENT MARKETING</div>
+                        </div>
+                      </div>
+                      <div class="service-descption-block">
+                        <p class="service-descption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique. Duis cursus, mi quis viverra ornare.
+                        </p>
+                      </div>
+                      <div class="service-tag-block">
+                        <div class="service-tag">Content Strategy & Roadmapping</div>
+                        <div class="service-tag">Content Creation & Storytelling</div>
+                        <div class="service-tag">SEO & Performance Content</div>
+                        <div class="service-tag">Content Distribution & Amplification</div>
+                        <div class="service-tag">Content Analytics & Optimization</div>
+                      </div>
+                    </div>
+                    <div class="service-image-wrapper">
+                      <img
+                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a4644addf7f7252dcb4961_Service%20image1.webp"
+                        loading="lazy"
+                        sizes="(max-width: 505px) 100vw, 505px"
+                        srcset="
+                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a4644addf7f7252dcb4961_Service%20image1-p-500.webp 500w,
+                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a4644addf7f7252dcb4961_Service%20image1.webp       505w
+                        "
+                        alt=""
+                        class="service-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-left">
+                      <div class="service-title-wrapper">
+                        <div class="service-number-block">
+                          <div class="service-number">02</div>
+                        </div>
+                        <div class="service-title-block">
+                          <div class="service-title">INFLUENCER MARKETING</div>
+                        </div>
+                      </div>
+                      <div class="service-descption-block">
+                        <p class="service-descption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique. Duis cursus, mi quis viverra ornare.
+                        </p>
+                      </div>
+                      <div class="service-tag-block">
+                        <div class="service-tag">Influencer Strategy & Talent Matching</div>
+                        <div class="service-tag">Campaign Management</div>
+                        <div class="service-tag">Creator Partnerships</div>
+                        <div class="service-tag">Performance Tracking</div>
+                        <div class="service-tag">Compliance & Brand Safety</div>
+                      </div>
+                    </div>
+                    <div class="service-image-wrapper">
+                      <img
+                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b40a7031d91a4008e6_Service%20image2.webp"
+                        loading="lazy"
+                        alt=""
+                        class="service-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-left">
+                      <div class="service-title-wrapper">
+                        <div class="service-number-block">
+                          <div class="service-number">03</div>
+                        </div>
+                        <div class="service-title-block">
+                          <div class="service-title">PERSONAL BRANDING</div>
+                        </div>
+                      </div>
+                      <div class="service-descption-block">
+                        <p class="service-descption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique. Duis cursus, mi quis viverra ornare.
+                        </p>
+                      </div>
+                      <div class="service-tag-block">
+                        <div class="service-tag">Executive Positioning</div>
+                        <div class="service-tag">Thought Leadership Content</div>
+                        <div class="service-tag">Media & PR Coaching</div>
+                        <div class="service-tag">Platform Growth</div>
+                        <div class="service-tag">Reputation Management</div>
+                      </div>
+                    </div>
+                    <div class="service-image-wrapper">
+                      <img
+                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b4419ab5805c03cffa_Service%20image3.webp"
+                        loading="lazy"
+                        sizes="(max-width: 505px) 100vw, 505px"
+                        srcset="
+                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b4419ab5805c03cffa_Service%20image3-p-500.webp 500w,
+                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b4419ab5805c03cffa_Service%20image3.webp       505w
+                        "
+                        alt=""
+                        class="service-image"
+                      />
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-left">
+                      <div class="service-title-wrapper">
+                        <div class="service-number-block">
+                          <div class="service-number">04</div>
+                        </div>
+                        <div class="service-title-block">
+                          <div class="service-title">PRODUCTION</div>
+                        </div>
+                      </div>
+                      <div class="service-descption-block">
+                        <p class="service-descption">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Suspendisse varius enim in eros elementum
+                          tristique. Duis cursus, mi quis viverra ornare.
+                        </p>
+                      </div>
+                      <div class="service-tag-block">
+                        <div class="service-tag">Video & Creative Production</div>
+                        <div class="service-tag">Studio & Location Management</div>
+                        <div class="service-tag">Post-production & Editing</div>
+                        <div class="service-tag">Motion & Design</div>
+                        <div class="service-tag">Live & Event Production</div>
+                      </div>
+                    </div>
+                    <div class="service-image-wrapper">
+                      <img
+                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b45dae44628eb192a2_Service%20image4.webp"
+                        loading="lazy"
+                        sizes="(max-width: 505px) 100vw, 505px"
+                        srcset="
+                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b45dae44628eb192a2_Service%20image4-p-500.webp 500w,
+                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b45dae44628eb192a2_Service%20image4.webp       505w
+                        "
+                        alt=""
+                        class="service-image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="view-button">
+                  <a
+                    data-wf--button--variant="button-white"
+                    data-w-id="d9b74960-f8c0-e9a6-8ff6-ba10fb4d3250"
+                    href="/contact"
+                    class="button-link w-inline-block"
+                    ><div class="button">
+                      <div class="button-content">
+                        <div class="button-text-wrap">
+                          <div class="button-text">Let&#x27;s talk</div>
+                          <div class="button-text hover-text">
+                            Let&#x27;s talk
+                          </div>
+                        </div>
+                        <div class="button-dot"></div>
+                      </div></div
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -1086,207 +1315,6 @@
                             class="button-text w-variant-1c93f705-3a95-6eae-a518-6eab488ce683 hover-text"
                           >
                             View All Work
-                          </div>
-                        </div>
-                        <div class="button-dot"></div>
-                      </div></div
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="service-section">
-          <div class="padding">
-            <div class="w-layout-blockcontainer container-medium w-container">
-              <div class="service-section-content-wrapper">
-                <div class="section-title">
-                  <div data-wf--title--variant="title-whte" class="title">
-                    <div class="sub-title-wrap">
-                      <div class="sub-title-dot"></div>
-                      <div
-                        class="sub-title w-variant-bd176cc2-59da-d6d4-29a0-534dd69b6c65"
-                      >
-                        What we do
-                      </div>
-                    </div>
-                    <div class="main-title-wrap">
-                      <h4
-                        class="main-title w-variant-bd176cc2-59da-d6d4-29a0-534dd69b6c65"
-                      >
-                        OUR SERVICES
-                      </h4>
-                    </div>
-                  </div>
-                  <div class="section-title-right">
-                    <h4 class="main-title white">(04)</h4>
-                  </div>
-                </div>
-                <div class="service-section-content">
-                  <div class="service-item">
-                    <div class="service-item-left">
-                      <div class="service-title-wrapper">
-                        <div class="service-number-block">
-                          <div class="service-number">01</div>
-                        </div>
-                        <div class="service-title-block">
-                          <div class="service-title">CONTENT MARKETING</div>
-                        </div>
-                      </div>
-                      <div class="service-descption-block">
-                        <p class="service-descption">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique. Duis cursus, mi quis viverra ornare.
-                        </p>
-                      </div>
-                      <div class="service-tag-block">
-                        <div class="service-tag">Content Strategy & Roadmapping</div>
-                        <div class="service-tag">Content Creation & Storytelling</div>
-                        <div class="service-tag">SEO & Performance Content</div>
-                        <div class="service-tag">Content Distribution & Amplification</div>
-                        <div class="service-tag">Content Analytics & Optimization</div>
-                      </div>
-                    </div>
-                    <div class="service-image-wrapper">
-                      <img
-                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a4644addf7f7252dcb4961_Service%20image1.webp"
-                        loading="lazy"
-                        sizes="(max-width: 505px) 100vw, 505px"
-                        srcset="
-                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a4644addf7f7252dcb4961_Service%20image1-p-500.webp 500w,
-                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a4644addf7f7252dcb4961_Service%20image1.webp       505w
-                        "
-                        alt=""
-                        class="service-image"
-                      />
-                    </div>
-                  </div>
-                  <div class="service-item">
-                    <div class="service-item-left">
-                      <div class="service-title-wrapper">
-                        <div class="service-number-block">
-                          <div class="service-number">02</div>
-                        </div>
-                        <div class="service-title-block">
-                          <div class="service-title">INFLUENCER MARKETING</div>
-                        </div>
-                      </div>
-                      <div class="service-descption-block">
-                        <p class="service-descption">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique. Duis cursus, mi quis viverra ornare.
-                        </p>
-                      </div>
-                      <div class="service-tag-block">
-                        <div class="service-tag">Influencer Strategy & Talent Matching</div>
-                        <div class="service-tag">Campaign Management</div>
-                        <div class="service-tag">Creator Partnerships</div>
-                        <div class="service-tag">Performance Tracking</div>
-                        <div class="service-tag">Compliance & Brand Safety</div>
-                      </div>
-                    </div>
-                    <div class="service-image-wrapper">
-                      <img
-                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b40a7031d91a4008e6_Service%20image2.webp"
-                        loading="lazy"
-                        alt=""
-                        class="service-image"
-                      />
-                    </div>
-                  </div>
-                  <div class="service-item">
-                    <div class="service-item-left">
-                      <div class="service-title-wrapper">
-                        <div class="service-number-block">
-                          <div class="service-number">03</div>
-                        </div>
-                        <div class="service-title-block">
-                          <div class="service-title">PERSONAL BRANDING</div>
-                        </div>
-                      </div>
-                      <div class="service-descption-block">
-                        <p class="service-descption">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique. Duis cursus, mi quis viverra ornare.
-                        </p>
-                      </div>
-                      <div class="service-tag-block">
-                        <div class="service-tag">Executive Positioning</div>
-                        <div class="service-tag">Thought Leadership Content</div>
-                        <div class="service-tag">Media & PR Coaching</div>
-                        <div class="service-tag">Platform Growth</div>
-                        <div class="service-tag">Reputation Management</div>
-                      </div>
-                    </div>
-                    <div class="service-image-wrapper">
-                      <img
-                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b4419ab5805c03cffa_Service%20image3.webp"
-                        loading="lazy"
-                        sizes="(max-width: 505px) 100vw, 505px"
-                        srcset="
-                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b4419ab5805c03cffa_Service%20image3-p-500.webp 500w,
-                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b4419ab5805c03cffa_Service%20image3.webp       505w
-                        "
-                        alt=""
-                        class="service-image"
-                      />
-                    </div>
-                  </div>
-                  <div class="service-item">
-                    <div class="service-item-left">
-                      <div class="service-title-wrapper">
-                        <div class="service-number-block">
-                          <div class="service-number">04</div>
-                        </div>
-                        <div class="service-title-block">
-                          <div class="service-title">PRODUCTION</div>
-                        </div>
-                      </div>
-                      <div class="service-descption-block">
-                        <p class="service-descption">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique. Duis cursus, mi quis viverra ornare.
-                        </p>
-                      </div>
-                      <div class="service-tag-block">
-                        <div class="service-tag">Video & Creative Production</div>
-                        <div class="service-tag">Studio & Location Management</div>
-                        <div class="service-tag">Post-production & Editing</div>
-                        <div class="service-tag">Motion & Design</div>
-                        <div class="service-tag">Live & Event Production</div>
-                      </div>
-                    </div>
-                    <div class="service-image-wrapper">
-                      <img
-                        src="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b45dae44628eb192a2_Service%20image4.webp"
-                        loading="lazy"
-                        sizes="(max-width: 505px) 100vw, 505px"
-                        srcset="
-                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b45dae44628eb192a2_Service%20image4-p-500.webp 500w,
-                          https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68a468b45dae44628eb192a2_Service%20image4.webp       505w
-                        "
-                        alt=""
-                        class="service-image"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="view-button">
-                  <a
-                    data-wf--button--variant="button-white"
-                    data-w-id="d9b74960-f8c0-e9a6-8ff6-ba10fb4d3250"
-                    href="/contact"
-                    class="button-link w-inline-block"
-                    ><div class="button">
-                      <div class="button-content">
-                        <div class="button-text-wrap">
-                          <div class="button-text">Let&#x27;s talk</div>
-                          <div class="button-text hover-text">
-                            Let&#x27;s talk
                           </div>
                         </div>
                         <div class="button-dot"></div>
