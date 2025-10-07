@@ -92,21 +92,12 @@
       href="https://unpkg.com/lenis@1.3.4/dist/lenis.css"
     />
     <style>
-      /* METABRIQ override: reduce hero title size for better balance */
+      /* METABRIQ override: fluid hero title sizing (scales across devices) */
       .hero-title {
-        font-size: 48px !important;
+        /* min 32px, fluid with viewport, max 96px */
+        font-size: clamp(32px, 4.5vw + 1rem, 96px) !important;
         line-height: 1.05 !important;
         letter-spacing: -0.5px !important;
-      }
-
-      /* Tablet */
-      @media (max-width: 991px) {
-        .hero-title { font-size: 40px !important; }
-      }
-
-      /* Mobile */
-      @media (max-width: 479px) {
-        .hero-title { font-size: 32px !important; }
       }
       /* Nav text logo styling (Nasalization / fallback) */
       .nav-brand-text {
@@ -124,6 +115,10 @@
       @media (max-width: 767px) {
         .nav-brand-text { font-size: 18px; }
       }
+    </style>
+    <style>
+      /* Hide the floating Webflow badge only (if injected) without altering other content */
+      .w-webflow-badge { display: none !important; visibility: hidden !important; pointer-events: none !important; }
     </style>
   </head>
   <body class="body">
@@ -4049,214 +4044,7 @@
             </div>
           </div>
         </section>
-        <section class="blog-section">
-          <div class="w-layout-blockcontainer container-large w-container">
-            <div class="blog-section-content-wrapper">
-              <div
-                data-w-id="996e637a-5b74-afaf-355a-c5ea90b15842"
-                style="
-                  -webkit-transform: translate3d(0, 5%, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 5%, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 5%, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 5%, 0) scale3d(1, 1, 1) rotateX(0)
-                    rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(2px);
-                "
-                class="section-title align-bottom"
-              >
-                <div data-wf--title--variant="title-black" class="title">
-                  <div class="sub-title-wrap">
-                    <div class="sub-title-dot"></div>
-                    <div class="sub-title">Blog</div>
-                  </div>
-                  <div class="main-title-wrap">
-                    <h4 class="main-title">Article</h4>
-                  </div>
-                </div>
-                <div class="section-title-right">
-                  <a
-                    data-wf--button--variant="button-black"
-                    data-w-id="d9b74960-f8c0-e9a6-8ff6-ba10fb4d3250"
-                    href="/blog"
-                    class="button-link w-inline-block"
-                    ><div
-                      class="button w-variant-1c93f705-3a95-6eae-a518-6eab488ce683"
-                    >
-                      <div class="button-content">
-                        <div class="button-text-wrap">
-                          <div
-                            class="button-text w-variant-1c93f705-3a95-6eae-a518-6eab488ce683"
-                          >
-                            View All Article
-                          </div>
-                          <div
-                            class="button-text w-variant-1c93f705-3a95-6eae-a518-6eab488ce683 hover-text"
-                          >
-                            View All Article
-                          </div>
-                        </div>
-                        <div class="button-dot"></div>
-                      </div></div
-                  ></a>
-                </div>
-              </div>
-              <div class="blog-section-content">
-                <div class="blog-collection-list-wrapper w-dyn-list">
-                  <div role="list" class="blog-collection-list w-dyn-items">
-                    <div
-                      role="listitem"
-                      class="blog-collection-item w-dyn-item"
-                    >
-                      <a
-                        data-w-id="c534cbb5-e04c-236d-ec60-bd8bfe6a97f0"
-                        href="/blogs/shaping-brands-through-purposeful-creativity"
-                        class="blog-link-block w-inline-block"
-                        ><div class="blog-item-block">
-                          <div class="blog-thumbnail-image-wrapper">
-                            <img
-                              src="https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6024d6a10b89fe4bbfd7d_Blog%20T%20Image1.webp"
-                              loading="lazy"
-                              style="
-                                -webkit-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                -moz-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                -ms-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
-                                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                              "
-                              alt=""
-                              sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
-                              srcset="
-                                https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6024d6a10b89fe4bbfd7d_Blog%20T%20Image1-p-500.webp 500w,
-                                https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6024d6a10b89fe4bbfd7d_Blog%20T%20Image1.webp       666w
-                              "
-                              class="blog-thumbnail-image"
-                            />
-                          </div>
-                          <div class="blog-item-info-block">
-                            <div class="blog-name-block">
-                              <div class="blog-name">
-                                Shaping brands through purposeful creativity
-                              </div>
-                            </div>
-                            <div class="blog-post-date-block">
-                              <div class="blog-post-date">20 August 2025</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div
-                      role="listitem"
-                      class="blog-collection-item w-dyn-item"
-                    >
-                      <a
-                        data-w-id="c534cbb5-e04c-236d-ec60-bd8bfe6a97f0"
-                        href="/blogs/fostering-growth-through-intentional-design"
-                        class="blog-link-block w-inline-block"
-                        ><div class="blog-item-block">
-                          <div class="blog-thumbnail-image-wrapper">
-                            <img
-                              src="https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6022dcded2dc161e47033_Blog%20T%20Image2.webp"
-                              loading="lazy"
-                              style="
-                                -webkit-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                -moz-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                -ms-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
-                                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                              "
-                              alt=""
-                              sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
-                              srcset="
-                                https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6022dcded2dc161e47033_Blog%20T%20Image2-p-500.webp 500w,
-                                https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6022dcded2dc161e47033_Blog%20T%20Image2.webp       666w
-                              "
-                              class="blog-thumbnail-image"
-                            />
-                          </div>
-                          <div class="blog-item-info-block">
-                            <div class="blog-name-block">
-                              <div class="blog-name">
-                                Fostering growth through intentional design
-                              </div>
-                            </div>
-                            <div class="blog-post-date-block">
-                              <div class="blog-post-date">20 August 2025</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div
-                      role="listitem"
-                      class="blog-collection-item w-dyn-item"
-                    >
-                      <a
-                        data-w-id="c534cbb5-e04c-236d-ec60-bd8bfe6a97f0"
-                        href="/blogs/building-trust-through-thoughtful-design"
-                        class="blog-link-block w-inline-block"
-                        ><div class="blog-item-block">
-                          <div class="blog-thumbnail-image-wrapper">
-                            <img
-                              src="https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6021399f7556bf6ebe5d8_Blog%20T%20Image3.webp"
-                              loading="lazy"
-                              style="
-                                -webkit-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                -moz-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                -ms-transform: translate3d(0, 0, 0)
-                                  scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                  rotateZ(0) skew(0, 0);
-                                transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
-                                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                              "
-                              alt=""
-                              sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
-                              srcset="
-                                https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6021399f7556bf6ebe5d8_Blog%20T%20Image3-p-500.webp 500w,
-                                https://cdn.prod.website-files.com/68a4451aa40debeea8c1354a/68a6021399f7556bf6ebe5d8_Blog%20T%20Image3.webp       666w
-                              "
-                              class="blog-thumbnail-image"
-                            />
-                          </div>
-                          <div class="blog-item-info-block">
-                            <div class="blog-name-block">
-                              <div class="blog-name">
-                                Building trust through thoughtful design
-                              </div>
-                            </div>
-                            <div class="blog-post-date-block">
-                              <div class="blog-post-date">20 August 2025</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- Blog section removed -->
         <section
           data-w-id="fde925a0-a739-3824-5343-8ea911d323f6"
           class="footer"
@@ -4474,7 +4262,7 @@
                           href="https://webflow.com/templates/designers/flow-nija"
                           target="_blank"
                           class="f-l-link"
-                          >Flow Nija</a
+                          >Code Pen</a
                         >
                       </div>
                     </div>
@@ -4485,7 +4273,7 @@
                           href="https://webflow.com"
                           target="_blank"
                           class="f-l-link"
-                          >Webflow</a
+                          >METABRIQ</a
                         >
                       </div>
                     </div>
