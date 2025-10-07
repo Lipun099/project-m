@@ -76,13 +76,9 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
+    <link href="FAVICON.png" rel="shortcut icon" type="image/png" />
     <link
-      href="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68abe6f23889f23ffa0b0d55_Fav%20Icon.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.prod.website-files.com/68a06b0de6c84c2596534814/68abe682c17c8da6efcb669b_Web%20clip.png"
+      href="FAVICON.png"
       rel="apple-touch-icon"
     />
     <!-- Lenis script and styles -->
@@ -92,28 +88,48 @@
       href="https://unpkg.com/lenis@1.3.4/dist/lenis.css"
     />
     <style>
+      @font-face {
+        font-family: 'Nasaliza';
+        src: url('NASALIZA.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
       /* METABRIQ override: fluid hero title sizing (scales across devices) */
       .hero-title {
         /* min 32px, fluid with viewport, max 96px */
         font-size: clamp(32px, 4.5vw + 1rem, 96px) !important;
         line-height: 1.05 !important;
         letter-spacing: -0.5px !important;
+        /* nudge the title slightly upward and add space below it */
+        transform: translateY(-8px);
+        margin-bottom: 18px;
       }
-      /* Nav text logo styling (Nasalization / fallback) */
+      /* Nav text logo styling (Nasaliza / fallback) */
       .nav-brand-text {
         display: inline-block;
-        font-family: 'Nasalization', 'Arial Rounded MT Bold', 'Segoe UI', Arial, sans-serif;
+        font-family: 'Nasaliza', 'Arial Rounded MT Bold', 'Segoe UI', Arial, sans-serif;
         font-weight: 700;
-        font-size: 20px;
-        color: #07122B;
+  font-size: 22px;
+  color: #ffffff;
         text-transform: uppercase;
         letter-spacing: 1px;
         line-height: 1;
       }
-      .nav-brand-text .reg { font-size: 12px; vertical-align: super; margin-left: 4px; }
+      .nav-brand-text .reg { font-size: 13px; vertical-align: super; margin-left: 6px; }
 
       @media (max-width: 767px) {
-        .nav-brand-text { font-size: 18px; }
+        .nav-brand-text { font-size: 20px; color: #ffffff; }
+        .nav-brand-text .reg { font-size: 11px; margin-left: 4px; }
+        .hero-title { transform: translateY(-6px); margin-bottom: 14px; }
+      }
+      /* Apply brand font to other METABRIQ logo/text instances */
+      .page-loder-text,
+      .footer-title,
+      .f-l-link.brand {
+        font-family: 'Nasaliza', 'Arial Rounded MT Bold', 'Segoe UI', Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
       }
     </style>
     <style>
@@ -132,7 +148,7 @@
             data-w-id="0d6ebb54-0e67-fa54-4799-f066bf79edf2"
             class="page-loder-text-block"
           >
-            <div class="page-loder-text">METABRIQ®</div>
+            <div class="page-loder-text">METABRIQ</div>
             <div
               data-w-id="0d6ebb54-0e67-fa54-4799-f066bf79edf5"
               class="page-loder-text-cover"
@@ -347,7 +363,7 @@
                   </div>
                 </div>
                 <div class="hero-title-wrap">
-                  <h2 class="hero-title"> A Content First Growth marketing Agency</h2>
+                  <h2 class="hero-title"> A Content First Growth Marketing Agency</h2>
                 </div>
               </div>
               <div class="hero-bottom-content">
@@ -4057,7 +4073,7 @@
                 <div class="f-top">
                   <div class="footer-content-top">
                     <div class="footer-title-block">
-                      <h1 class="footer-title">METABRIQ®</h1>
+                      <h1 class="footer-title">METABRIQ</h1>
                     </div>
                     <div class="footer-newsletter-block">
                       <div class="footer-newsletter-form-block w-form">
@@ -4272,7 +4288,7 @@
                         <a
                           href="https://webflow.com"
                           target="_blank"
-                          class="f-l-link"
+                          class="f-l-link brand"
                           >METABRIQ</a
                         >
                       </div>
